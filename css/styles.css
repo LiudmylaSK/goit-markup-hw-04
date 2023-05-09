@@ -297,7 +297,7 @@ body {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -353,17 +353,23 @@ body {
 
 .team-social {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
 }
 
-.social-link {
-  display: inline-block;
-  padding: 12px;
-  border: none;
+.footer-social-media-item {
   width: 40px;
   height: 40px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  border: none;
   border-radius: 50%;
 
   color: #f4f4fd;
@@ -388,11 +394,17 @@ body {
   display: flex;
   justify-content: center;
 
-  column-gap: 24px;
+  gap: 24px;
+}
+.customers-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
 }
 
 .customer-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px 32px;
   width: 100%;
   height: 100%;
