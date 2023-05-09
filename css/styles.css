@@ -84,6 +84,8 @@ body {
 
 .page-header {
   border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .main-header {
@@ -241,9 +243,15 @@ body {
 }
 
 .features-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 112px;
   padding: 24px 100px;
   margin-bottom: 8px;
+
+  border-radius: 4px;
 
   background-color: var(--secondary-bg-color);
 }
@@ -316,8 +324,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-card .content {
-  padding: 32px 16px;
+.content {
+  padding: 32px 0;
 }
 
 .team-name {
@@ -346,9 +354,7 @@ body {
 .team-social {
   display: flex;
   column-gap: 24px;
-
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
 }
 
 .social-link {
@@ -370,6 +376,9 @@ body {
 }
 
 .social-media-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: currentColor;
 }
 
@@ -418,11 +427,11 @@ body {
 }
 .main-footer {
   display: flex;
-  align-items: start;
-  column-gap: 120px;
+  align-items: baseline;
 }
 
 .footer-slogan {
+  margin-right: 120px;
   max-width: 264px;
 }
 
@@ -456,13 +465,15 @@ body {
 
 .footer-social-media {
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
   justify-content: center;
   align-items: center;
 }
 
 .footer-social-media-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px;
   border: none;
   width: 40px;
@@ -534,8 +545,12 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.projects-card:hover,
-.projects-card:focus {
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
