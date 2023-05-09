@@ -9,7 +9,7 @@
   --basic-bg-color: #fff;
   --secondary-bg-color: #f4f4fd;
   --hero-text-color: #fff;
-  --footer-text-color: #f4f4f4;
+  --footer-text-color: #f4f4fd;
   --footer-bg-color: #2e2f42;
   --border-color: #e7e9fc;
 }
@@ -360,6 +360,7 @@ body {
 
   border-radius: 50%;
 
+  color: #f4f4fd;
   background-color: #4d5ae5;
 }
 
@@ -387,14 +388,21 @@ body {
 
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: #8e8f99;
 }
 
 .customer-link:hover,
 .customer-link:focus {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .customer-icon {
+  fill: currentColor;
+}
+
+.customer-icon:hover,
+.customer-icon:focus {
   fill: currentColor;
 }
 
@@ -427,7 +435,6 @@ body {
 
 .footer-text {
   color: var(--footer-text-color);
-  /* max-width: 264px; */
 
   font-size: 16px;
   line-height: 1.5;
@@ -437,6 +444,8 @@ body {
 .social-media .footer-text {
   margin-bottom: 16px;
   font-weight: 500;
+
+  color: #fff;
 }
 
 .social-media {
@@ -459,7 +468,13 @@ body {
 
   border-radius: 50%;
 
+  color: #f4f4fd;
   background-color: #4d5ae5;
+}
+
+.footer-social-media-link:hover,
+.footer-social-media-link:focus {
+  background-color: #31d0aa;
 }
 
 /* PORTFOLIO.HTML */
@@ -482,7 +497,7 @@ body {
   padding: 12px 24px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  background-color: #f4f4f4;
+  background-color: var(--secondary-bg-color);
   color: #4d5ae5;
 
   font-weight: 500;
